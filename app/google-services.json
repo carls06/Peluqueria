@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "838882770987",
+    "firebase_url": "https://peluqueria-aa9ac-default-rtdb.firebaseio.com",
+    "project_id": "peluqueria-aa9ac",
+    "storage_bucket": "peluqueria-aa9ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:838882770987:android:b2b85f2464d7d6ae4f2a6e",
+        "android_client_info": {
+          "package_name": "com.carlosgonzalez.peluqueria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "838882770987-vlo5r93dbe1v8840r9ju3990ks95fpde.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6-d6qTUOWZEKB3mtm9SJMww7A0TdWt1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "838882770987-vlo5r93dbe1v8840r9ju3990ks95fpde.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

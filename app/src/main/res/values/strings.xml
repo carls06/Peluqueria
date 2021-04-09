@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Peluqueria</string>
+    <string name="save">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="toastacet">Toast acept</string>
+    <string name="toasterror">Toast Error</string>
+    <string name="email">Correo</string>
+    <string name="Login">Iniciar Sesion</string>
+    <string name="pass">Contraseña</string>
+
+
+</resources>
