@@ -7,6 +7,9 @@
     <string name="email">Correo</string>
     <string name="Login">Iniciar Sesion</string>
     <string name="pass">Contraseña</string>
+    <string name="register">Registrarse</string>
+    <string name="pass2">Repetir contraseña</string>
+    <string name="warning">Se necesitan mas de 6 caracteres</string>
 
 
 </resources>
