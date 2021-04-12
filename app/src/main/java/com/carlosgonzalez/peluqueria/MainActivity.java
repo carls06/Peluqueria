@@ -12,14 +12,14 @@ import com.google.firebase.database.FirebaseDatabase;
 public class MainActivity extends AppCompatActivity {
 
     RecyclerView recview;
-    myadapter adapter;
+    Myadapter adapter;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getSupportActionBar().hide();
+      //  getSupportActionBar().hide();
 
         recview=(RecyclerView)findViewById(R.id.recview);
         recview.setLayoutManager(new LinearLayoutManager(this));
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                         .setQuery(FirebaseDatabase.getInstance().getReference().child("cortes"), model.class)
                         .build();
 
-        adapter=new myadapter(options);
+        adapter=new Myadapter(options);
         recview.setAdapter(adapter);
 
     }
