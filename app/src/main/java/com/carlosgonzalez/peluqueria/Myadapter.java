@@ -3,6 +3,7 @@ package com.carlosgonzalez.peluqueria;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -39,12 +40,12 @@ public myviewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
 
 class myviewholder extends RecyclerView.ViewHolder
 {
-    CircleImageView img;
+    ImageView img;
     TextView name,descrip,costo;
     public myviewholder(@NonNull View itemView)
     {
         super(itemView);
-        img=(CircleImageView)itemView.findViewById(R.id.img1);
+        img=(ImageView)itemView.findViewById(R.id.img1);
         name=(TextView)itemView.findViewById(R.id.nametext);
         descrip=(TextView)itemView.findViewById(R.id.coursetext);
         costo=(TextView)itemView.findViewById(R.id.emailtext);
