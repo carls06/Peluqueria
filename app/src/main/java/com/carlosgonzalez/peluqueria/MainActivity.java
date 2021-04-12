@@ -6,10 +6,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
+import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class MainActivity extends AppCompatActivity {
 
     RecyclerView recview;
-    private Object RecyclerView;
+    myadapter adapter;
 
 
     @Override
@@ -22,6 +25,27 @@ public class MainActivity extends AppCompatActivity {
         recview.setLayoutManager(new LinearLayoutManager(this));
 
         //ingresar el firebaseRecycleroption aqui
+        
+        FirebaseRecyclerOptions<model> options =
+                new FirebaseRecyclerOptions.Builder<model>()
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("cortes"), model.class)
+                        .build();
 
+        adapter=new myadapter(options);
+        recview.setAdapter(adapter);
+
+    }
+
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        adapter.startListening();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        adapter.stopListening();
     }
 }
