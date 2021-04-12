@@ -10,12 +10,12 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="265dp"
-        android:background="#000000"
+        android:background="@color/purple_500"
         android:padding="15dp"
 
         >
 
-        <CircleImageView
+        <ImageView
             android:id="@+id/img1"
             android:layout_width="138dp"
             android:layout_height="172dp"
@@ -29,32 +29,32 @@
             android:id="@+id/nametext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
+            android:layout_marginLeft="38dp"
             android:layout_toRightOf="@id/img1"
             android:text="nombre"
-            android:textColor="#cccc"
+            android:textColor="#B23833"
             android:textSize="25sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/coursetext"
-            android:layout_width="217dp"
-            android:layout_height="134dp"
+            android:layout_width="241dp"
+            android:layout_height="197dp"
             android:layout_below="@id/nametext"
-            android:layout_marginLeft="18dp"
+            android:layout_marginLeft="7dp"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@id/img1"
             android:text="descripcion"
             android:textColor="#cccc"
-            android:textSize="25sp" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/emailtext"
-            android:layout_width="match_parent"
+            android:layout_width="95dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/coursetext"
-            android:layout_marginLeft="18dp"
-            android:layout_marginTop="11dp"
+            android:layout_marginLeft="-107dp"
+            android:layout_marginTop="-29dp"
             android:layout_toRightOf="@id/img1"
             android:text="costo"
             android:textColor="#cccc"
